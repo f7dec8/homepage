@@ -13,7 +13,7 @@
     "start:generate": "npx serve .output/public",
     "lint": "eslint .",
     "typecheck": "vue-tsc --noEmit",
-    "deploy": "gh-pages --dotfiles -d .output/public"
+    "deploy": "nuxi generate && gh-pages --dotfiles -d .output/public"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^3.9.1",
