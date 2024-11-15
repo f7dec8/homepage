@@ -69,7 +69,7 @@ export default defineNuxtConfig({
       routes: ['/'],
       ignore: ['/hi'],
     },
-    preset: 'github_pages',
+    preset: 'github-pages',
   },
 
   eslint: {
