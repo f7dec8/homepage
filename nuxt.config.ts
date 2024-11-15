@@ -11,6 +11,8 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
   ],
 
+  ssr: false,
+
   devtools: {
     enabled: true,
   },
@@ -66,6 +68,7 @@ export default defineNuxtConfig({
       routes: ['/'],
       ignore: ['/hi'],
     },
+    preset: 'github-pages',
   },
 
   eslint: {
