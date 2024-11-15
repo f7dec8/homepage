@@ -19,6 +19,7 @@ export default defineNuxtConfig({
 
   app: {
     baseURL: '/bns-neo/',
+    // buildAssetsDir: 'assets',
     head: {
       viewport: 'width=device-width,initial-scale=1',
       link: [
