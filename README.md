@@ -1,4 +1,4 @@
-# Nuxt Minimal Starter
+# Nuxt Minimal Starter (2024.11.16)
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
