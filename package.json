@@ -1,0 +1,26 @@
+{
+  "type": "module",
+  "private": true,
+  "packageManager": "pnpm@9.13.2",
+  "homepage": "https://f7dec8.github.io/bns-neo",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "deploy": "gh-pages --dotfiles -d .output/public"
+  },
+  "dependencies": {
+    "nuxt": "^3.14.159",
+    "vue": "latest",
+    "vue-router": "latest"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^3.9.1",
+    "@nuxt/devtools": "^1.6.0",
+    "@nuxt/eslint": "^0.6.2",
+    "eslint": "^9.15.0",
+    "gh-pages": "^6.2.0"
+  }
+}
