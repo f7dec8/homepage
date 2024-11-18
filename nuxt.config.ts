@@ -1,8 +1,10 @@
-import { appDescription } from './app/constants/index'
+import { appDescription } from './app/constants/index';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
+    '@vueuse/nuxt',
+    '@unocss/nuxt',
     '@nuxt/eslint',
   ],
 
@@ -30,6 +32,24 @@ export default defineNuxtConfig({
     },
   },
 
+  css: [
+    '@unocss/reset/tailwind.css',
+  ],
+
+  future: {
+    compatibilityVersion: 4,
+  },
+
+  compatibilityDate: '2024-08-14',
+
+  nitro: {
+    esbuild: {
+      options: {
+        target: 'esnext',
+      },
+    },
+  },
+
   eslint: {
     config: {
       standalone: false,
@@ -39,19 +59,4 @@ export default defineNuxtConfig({
     },
   },
 
-  future: {
-    compatibilityVersion: 4,
-  },
-
-  nitro: {
-    esbuild: {
-      options: {
-        target: 'esnext',
-      },
-    },
-
-    preset: 'github-pages'
-  },
-
-  compatibilityDate: '2024-04-03',
-})
+});

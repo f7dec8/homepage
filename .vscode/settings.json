@@ -1,4 +1,8 @@
 {
+  "editor.defaultFormatter": "Vue.volar",
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+
   "files.associations": {
     "*.css": "postcss"
   },
@@ -10,7 +14,7 @@
   // Auto fix
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
-    "source.organizeImports": "never"
+    "source.organizeImports": "always"
   },
 
   // Silent the stylistic rules in you IDE, but still auto fix them
@@ -39,7 +43,12 @@
     "jsonc",
     "yaml"
   ],
-  "interline-translate.knownPopularWordCount": 6000,
+
+  // CSS
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
+
   "iconify.annotations": true,
   "iconify.inplace": true
 }
