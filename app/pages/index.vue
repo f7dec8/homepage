@@ -3,12 +3,8 @@
 </script>
 
 <template>
-  <div
-    h="screen"
-    bg="neutral-900"
-    text="white"
-  >
-    <SideBar />
+  <div>
+    dddddd
   </div>
 </template>
 

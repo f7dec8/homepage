@@ -26,6 +26,9 @@ export default defineConfig({
       },
     }),
   ],
+  rules: [
+    [/^content-\[(.*)\]$/, ([, content]) => ({ content: JSON.stringify(content) })],
+  ],
   theme: {
     colors: {
       primary: {

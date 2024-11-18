@@ -3,8 +3,14 @@
 </script>
 
 <template>
-  <div>
-    <slot />
+  <div
+    bg="neutral-900"
+    min-h="screen"
+    text="white"
+    ps="240px"
+  >
+    <Navigation />
+    <Content />
   </div>
 </template>
 
