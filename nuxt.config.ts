@@ -1,11 +1,13 @@
-import { appDescription } from './app/constants/index';
+import { resolve } from 'node:path';
+import { appDescription } from './app/constants';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
-    '@vueuse/nuxt',
-    '@unocss/nuxt',
+    '@nuxt/content',
     '@nuxt/eslint',
+    '@unocss/nuxt',
+    '@vueuse/nuxt',
   ],
 
   ssr: false,
@@ -16,6 +18,7 @@ export default defineNuxtConfig({
     baseURL: '/bns-neo/',
 
     head: {
+      charset: 'utf-8',
       viewport: 'width=device-width,initial-scale=1',
       link: [
         { rel: 'icon', href: '/bns-neo/favicon.ico', sizes: 'any' },
@@ -35,6 +38,15 @@ export default defineNuxtConfig({
   css: [
     '@unocss/reset/tailwind.css',
   ],
+
+  content: {
+    sources: {
+      content: {
+        driver: 'fs',
+        base: resolve(__dirname, 'app/content'),
+      },
+    },
+  },
 
   future: {
     compatibilityVersion: 4,

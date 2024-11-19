@@ -36,7 +36,15 @@
       flex-grow-1
     >
       <ul>
-        <li
+        <li p-3>
+          <NuxtLink
+            block
+            to="/quest"
+          >
+            퀘스트
+          </NuxtLink>
+        </li>
+        <!-- <li
           v-for="i in 6"
           :key="i"
           p-3
@@ -47,7 +55,7 @@
           >
             무공 비급
           </NuxtLink>
-        </li>
+        </li> -->
       </ul>
     </nav>
   </div>
