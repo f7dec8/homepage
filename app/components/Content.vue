@@ -3,9 +3,9 @@
 </script>
 
 <template>
-  <div p-3>
+  <main p-3>
     <NuxtPage />
-  </div>
+  </main>
 </template>
 
 <style>
