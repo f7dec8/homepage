@@ -40,6 +40,9 @@ export default defineNuxtConfig({
   ],
 
   content: {
+    experimental: {
+      clientDB: true,
+    },
     sources: {
       content: {
         driver: 'fs',
