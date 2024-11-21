@@ -15,15 +15,15 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   app: {
-    baseURL: '/bns-neo/',
+    baseURL: '/homepage/',
 
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width,initial-scale=1',
       link: [
-        { rel: 'icon', href: '/bns-neo/favicon.ico', sizes: 'any' },
-        { rel: 'icon', type: 'image/svg+xml', href: '/bns-neo/nuxt.svg' },
-        // { rel: 'apple-touch-icon', href: '/bns-neo/apple-touch-icon.png' },
+        { rel: 'icon', href: '/homepage/favicon.ico', sizes: 'any' },
+        { rel: 'icon', type: 'image/svg+xml', href: '/homepage/nuxt.svg' },
+        // { rel: 'apple-touch-icon', href: '/homepage/apple-touch-icon.png' },
       ],
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
